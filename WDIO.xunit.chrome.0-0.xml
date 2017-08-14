@@ -1,68 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="website_url_test" timestamp="2017-08-14T12:40:00" time="5.574" tests="4" failures="0" errors="1" skipped="0">
+  <testsuite name="website_url_test" timestamp="2017-08-14T12:46:38" time="4.463" tests="3" failures="0" errors="0" skipped="0">
     <properties>
       <property name="specId" value="c13b74f2cf2d9f50a7788114b6025d21"/>
       <property name="suiteName" value="Website url test"/>
       <property name="capabilities" value="chrome"/>
       <property name="file" value=".\test\specs\test.js"/>
     </properties>
-    <testcase classname="chrome.website_url_test" name="should_have_a_title_webdriver" time="4.263">
+    <testcase classname="chrome.website_url_test" name="should_have_a_title_webdriver" time="3.721">
       <system-out>
         <![CDATA[
-COMMAND: GET http://127.0.0.1:4444/wd/hub/session/9a5d7875-56d4-4eef-a757-8a31dbe6d86e/title - {}
-RESULT: {"state":"success","sessionId":"9a5d7875-56d4-4eef-a757-8a31dbe6d86e","hCode":21904752,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}
-RESULT: {"state":"success","sessionId":"9a5d7875-56d4-4eef-a757-8a31dbe6d86e","hCode":19396920,"value":"WebdriverIO - WebDriver bindings for Node.js","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/a6105138-6a2f-455d-98cc-d02fcf204166/title - {}
+RESULT: {"state":"success","sessionId":"a6105138-6a2f-455d-98cc-d02fcf204166","hCode":3807467,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}
+RESULT: {"state":"success","sessionId":"a6105138-6a2f-455d-98cc-d02fcf204166","hCode":4701473,"value":"WebdriverIO - WebDriver bindings for Node.js","class":"org.openqa.selenium.remote.Response","status":0}
 ]]>
       </system-out>
     </testcase>
-    <testcase classname="chrome.website_url_test" name="should_include_webdriver" time="0.084">
+    <testcase classname="chrome.website_url_test" name="should_include_webdriver" time="0.087">
       <system-out>
         <![CDATA[
-COMMAND: POST http://127.0.0.1:4444/wd/hub/session/9a5d7875-56d4-4eef-a757-8a31dbe6d86e/elements - {"using":"partial link text","value":"Webdriver"}
-RESULT: {"state":"success","sessionId":"9a5d7875-56d4-4eef-a757-8a31dbe6d86e","hCode":33054659,"value":[{"ELEMENT":"0"}],"class":"org.openqa.selenium.remote.Response","status":0}
-COMMAND: GET http://127.0.0.1:4444/wd/hub/session/9a5d7875-56d4-4eef-a757-8a31dbe6d86e/element/0/text - {}
-RESULT: {"state":"success","sessionId":"9a5d7875-56d4-4eef-a757-8a31dbe6d86e","hCode":22428195,"value":"@WebdriverIO","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/a6105138-6a2f-455d-98cc-d02fcf204166/elements - {"using":"partial link text","value":"Webdriver"}
+RESULT: {"state":"success","sessionId":"a6105138-6a2f-455d-98cc-d02fcf204166","hCode":4465625,"value":[{"ELEMENT":"0"}],"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/a6105138-6a2f-455d-98cc-d02fcf204166/element/0/text - {}
+RESULT: {"state":"success","sessionId":"a6105138-6a2f-455d-98cc-d02fcf204166","hCode":13292204,"value":"@WebdriverIO","class":"org.openqa.selenium.remote.Response","status":0}
 ]]>
       </system-out>
     </testcase>
-    <testcase classname="chrome.website_url_test" name="should_response_200" time="0.722">
+    <testcase classname="chrome.website_url_test" name="should_response_200" time="0.648">
       <system-out>
         <![CDATA[
-COMMAND: POST http://127.0.0.1:4444/wd/hub/session/9a5d7875-56d4-4eef-a757-8a31dbe6d86e/element - {"using":"css selector","value":"a[href*=\"guide.html\"]"}
-RESULT: {"state":"success","sessionId":"9a5d7875-56d4-4eef-a757-8a31dbe6d86e","hCode":9791949,"value":{"ELEMENT":"1"},"class":"org.openqa.selenium.remote.Response","status":0}
-COMMAND: POST http://127.0.0.1:4444/wd/hub/session/9a5d7875-56d4-4eef-a757-8a31dbe6d86e/element/1/click - {}
-RESULT: {"state":"success","sessionId":"9a5d7875-56d4-4eef-a757-8a31dbe6d86e","hCode":15454099,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}
-COMMAND: GET http://127.0.0.1:4444/wd/hub/session/9a5d7875-56d4-4eef-a757-8a31dbe6d86e/url - {}
-RESULT: {"state":"success","sessionId":"9a5d7875-56d4-4eef-a757-8a31dbe6d86e","hCode":3621211,"value":"http://webdriver.io/guide.html","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/a6105138-6a2f-455d-98cc-d02fcf204166/element - {"using":"css selector","value":"a[href*=\"guide.html\"]"}
+RESULT: {"state":"success","sessionId":"a6105138-6a2f-455d-98cc-d02fcf204166","hCode":12017418,"value":{"ELEMENT":"1"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/a6105138-6a2f-455d-98cc-d02fcf204166/element/1/click - {}
+RESULT: {"state":"success","sessionId":"a6105138-6a2f-455d-98cc-d02fcf204166","hCode":30673690,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/a6105138-6a2f-455d-98cc-d02fcf204166/url - {}
+RESULT: {"state":"success","sessionId":"a6105138-6a2f-455d-98cc-d02fcf204166","hCode":28513368,"value":"http://webdriver.io/guide.html","class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: DELETE http://127.0.0.1:4444/wd/hub/session/a6105138-6a2f-455d-98cc-d02fcf204166 - {}
+RESULT: {"state":"success","sessionId":"a6105138-6a2f-455d-98cc-d02fcf204166","hCode":4908931,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}
 ]]>
       </system-out>
-    </testcase>
-    <testcase classname="chrome.website_url_test" name="opens_the_hamburger" time="0.499">
-      <error message="element not visible"/>
-      <system-out>
-        <![CDATA[
-COMMAND: POST http://127.0.0.1:4444/wd/hub/session/9a5d7875-56d4-4eef-a757-8a31dbe6d86e/element - {"using":"css selector","value":"button.navbar-toggle"}
-RESULT: {"state":"success","sessionId":"9a5d7875-56d4-4eef-a757-8a31dbe6d86e","hCode":4087940,"value":{"ELEMENT":"2"},"class":"org.openqa.selenium.remote.Response","status":0}
-COMMAND: POST http://127.0.0.1:4444/wd/hub/session/9a5d7875-56d4-4eef-a757-8a31dbe6d86e/element/2/click - {}
-RESULT: {"message":"element not visible","type":"RuntimeError","screenshot":"[base64] 286132 bytes","seleniumStack":{"status":11,"type":"ElementNotVisible","message":"An element command could not be completed because the element is not visible on the page.","orgStatusMessage":"element not visible\n  (Session info: chrome=60.0.3112.90)\n  (Driver info: chromedriver=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8),platform=Windows NT 10.0.15063 x86_64) (WARNING: The serve ... (1085 more bytes)"}}
-COMMAND: DELETE http://127.0.0.1:4444/wd/hub/session/9a5d7875-56d4-4eef-a757-8a31dbe6d86e - {}
-RESULT: {"state":"success","sessionId":"9a5d7875-56d4-4eef-a757-8a31dbe6d86e","hCode":2413038,"value":null,"class":"org.openqa.selenium.remote.Response","status":0}
-]]>
-      </system-out>
-      <system-err>
-        <![CDATA[
-Error: An element command could not be completed because the element is not visible on the page.
-    at Object.wait (C:\no_dev\webdriverio-test\node_modules\fibers\future.js:449:15)
-    at Object.click (C:\no_dev\webdriverio-test\node_modules\wdio-sync\build\index.js:344:27)
-    at Context.it (C:/no_dev/webdriverio-test/test/specs/test.js:38:13)
-    at C:\no_dev\webdriverio-test\node_modules\wdio-sync\build\index.js:584:26
-    at Promise.F (C:\no_dev\webdriverio-test\node_modules\core-js\library\modules\_export.js:35:28)
-    at Context.executeSync (C:\no_dev\webdriverio-test\node_modules\wdio-sync\build\index.js:582:12)
-    at C:\no_dev\webdriverio-test\node_modules\wdio-sync\build\index.js:753:42
-    at elementIdClick("2") - C:\no_dev\webdriverio-test\node_modules\webdriverio\build\lib\commands\click.js:20:22
-]]>
-      </system-err>
     </testcase>
   </testsuite>
 </testsuites>
