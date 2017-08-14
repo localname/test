@@ -1,3 +1,4 @@
 node_modules/
 errorShots/*
 WDIO.*.xml
+allure_report/
