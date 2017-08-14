@@ -34,8 +34,8 @@ describe ('Website url test', () => {
     expect(url).to.be.equal('http://webdriver.io/guide.html')
   })
 
-  // it('opens the hamburger', () => {
-  //   browser.click('button.navbar-toggle');
-  //   console.log('asd')
-  // })
+  it('opens the hamburger', () => {
+    browser.click('button.navbar-toggle');
+    console.log('asd')
+  })
 })
